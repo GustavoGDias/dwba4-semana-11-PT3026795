@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.barraNavegacao {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.barraNavegacao a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.barraNavegacao > a:last-child {
+  float: right;
+}
+
+.suspenso {
+  float: left;
+  overflow: hidden;
+}
+
+.suspenso .botao {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.barraNavegacao a:hover,
+.suspenso:hover .dropbtn {
+  background-color: red;
+}
+
+.suspenso-conteudo {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.suspenso-conteudo a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.suspenso-conteudo a:hover {
+  background-color: #ddd;
+}
+
+.suspenso:hover .suspenso-conteudo {
+  display: block;
+}
+
+header > div:last-of-type {
+  height: 119px;
+
+  background-color: #008f2e;
+}
